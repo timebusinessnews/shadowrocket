@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Troubleshooting common issues</title>
+<meta name="dc.title" content="Troubleshooting common issues">
+<meta name="description" content="<p>&quot;Quick guide to troubleshoot common issues with Shadowrocket VPN: connectivity, speed, and configuration solutions for a seamless experience.&quot;</p>">
+<meta name="keywords" content="Troubleshooting common issues">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="troubleshooting-common-issues.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/logo.jpg" alt="Troubleshooting common issues" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+.uba7f55150237e3bc2424bf513cb0f3f3{
+height: 100%;
+object-fit: none;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-body{
+padding: 1.75rem 2rem;
+}
+.zdeeba9cb721dd9bdfc7db7833f9fb370{
+color: #ffffff;
+}
+.fa-star,.fa-star-half-alt{
+font-size: 15.3px;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-body p:last-child{
+margin-bottom: 0;
+}
+footer{
+padding-top:60.3px;
+padding-bottom:59.6px;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card .card-img span{
+font-size: 60.3px;
+background: linear-gradient(45deg, #ffb2b6,#aa94ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 p ,.y5f23d4a5c43932c76be27a0a5bc9c808 label{
+font-size:18px!important;
+}
+.dropdown-menu{
+max-width:800.3px;
+overflow-x: auto;
+}
+.v048d57f6585d8bd9de0e0208cb318cb6{
+color: white;
+font-size: 19.5px;
+margin-bottom: 21.2px;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+footer ul{
+padding-left: 0px!important;
+list-style: none;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card1 *{
+color:#000000;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card1{
+background:#ffffff!important ;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card{
+background-color: transparent;
+border: none;
+}
+.wc127ad16c3cbc4ad8dce8fe89e9cfb00 i{
+border-radius: 50%;
+width: 10mm;
+text-align: center;
+line-height: 37px;
+height: 10mm;
+}
+.card3 a{
+color:#ff5e67!important;
+}
+footer *{
+font-size:19px!important;
+color:#777777!important;
+line-height: 1.5;
+}
+.x81d0651f92a14ea821688ea748c7082c *{
+color: #121212!important;
+}
+.xa6c6a4f3e2952bf9f81fd9fc87420990{
+background-color:#fe5270!important;
+border-color:#fe5270!important;
+color:#ffffff!important;
+}
+.div1 h2{
+font-size:48px!important;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card4 *{
+color:#000000;
+}
+.x3dee71ee76cc5304d10d46103387b9bc{
+width: 100%;
+max-height: 720.3px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+a{
+text-decoration: none!important;
+}
+.wc127ad16c3cbc4ad8dce8fe89e9cfb00 i:hover{
+background: black;
+color:#ffdfe3;
+border-radius: 50%;
+width:10mm;
+text-align:center;
+height:10mm;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-header h6{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: black;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.btn-md{
+padding:15.4px 29.7px;
+border-radius: 0;
+}
+.v94535d72f62f31dc30ac06bb07d325e0{
+position: relative;
+z-index: 1;
+}
+.tf3df70a3f092d70a3026dc0bb87205fb *{
+color: #ffffff;
+}
+.c6a31b4b3b9bb68f7e6cb29e676d1cde0{
+text-decoration: underline!important;color:#ff6069!important
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card:last-child{
+margin-bottom: 0;
+}
+.y454af75b8a4c350f760c029289e12f9a{
+list-style: none;
+font-size:19px!important;
+}
+.card2 a{
+color:#ff6d76!important;
+}
+.ff359f4f8be24c17417434728b8796d9a *{
+color:white!important;
+}
+.navbar a{
+font-size: 17.7px;
+}
+.t97e0ec9be3db7e47a465a5dbaaec1a28{
+max-height: 300.4px;
+overflow-y:auto; 
+}
+.w36f191dbcbedccadd29c7132307d9845{
+font-size: 30px!important;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card4{
+background:#ffffff!important;
+}
+.underline .line{
+width: 5rem;
+height: 3px;
+background: linear-gradient(90deg, #ab95ff,#ff565f);
+display: inline-block;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card2{
+background:#ffffff!important;
+}
+ul{
+list-style: circle;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.x0ab9669ec65e9faeba5bec9a205e4512{
+color: white;
+}
+.t6f45559cc56a040b58a7f1dd238312ff{
+font-size:19px!important;
+}
+.card1 a{
+color:#ff656e!important;
+}
+footer a{
+color:  #777777!important;
+text-decoration: underline!important;
+}
+iframe{
+border: none!important;
+}
+.d3d2be6ad8a9824a86d13815fa96bf840{
+font-size: 13.7px;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808{
+padding-top:89.9px;
+padding-bottom:90.5px;
+background-color:#ffffff;
+}
+.bg-brown{
+background: #f8f6f2;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-header{
+background-color: #ffffff;
+padding: 0;
+border-bottom-color: #ffffff;
+}
+.t24b9114f59d40cf1a1023e387f6b7da1:hover{
+background-size: 100% 100%!important;
+color:#fecbcf!important;
+background:#ffffff!important;
+background-repeat: no-repeat!important;
+background-position: 0 90%!important; 
+transition: background-size 0.2s ease-in!important;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card2 *{
+color:#000000;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card3{
+background:#ffffff!important;
+}
+.b2a91a5cc60a839b15c9d58941724c46b *{
+font-size:19px!important;
+color: #787878;
+}
+.eb183a9c89edceefa133b1c8a7fc4ec73,p{
+font-size:17.5px;
+}
+.img-overlay{
+position: relative;
+min-height: 600.5px;
+}
+.align-self-stretch{
+ms-flex-item-align: stretch!important;
+align-self: stretch!important;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-header h6 span{
+font-size: 1.5rem;
+}
+.wc127ad16c3cbc4ad8dce8fe89e9cfb00{
+font-size:20.4px;
+padding:10.3px;
+color: black;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.nav-item{
+margin-top: 10px;
+margin-bottom: 9.9px;
+padding-left: 7.2px;
+padding-right: 6.6px;
+}
+.tf3df70a3f092d70a3026dc0bb87205fb{
+background: #0f0f0f;
+}
+li a{
+color: #ff5d66;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card-title{
+text-align: left;
+color: #ffabaf;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 h4{
+font-size:20px!important;
+}
+.v94535d72f62f31dc30ac06bb07d325e0 .card .card-header.collapsed{
+color: #151865;
+}
+.nav-link{
+color: #0b0b0b !important;
+}
+.a8a935484800c15804da0144c8c3a2e79{
+position: relative;
+z-index: 1;
+background: #0f0f0f;
+}
+.x81d0651f92a14ea821688ea748c7082c{
+background: #ffffff;
+}
+.ff359f4f8be24c17417434728b8796d9a{
+background: rgba(0,0,0,0.6);
+text-align: center;
+}
+.display-2{
+font-size: 45.1px;
+}
+.y5f23d4a5c43932c76be27a0a5bc9c808 .card3 *{
+color:#000000;
+}
+.y4d91e6a238eba427fff07b76b55f4b73{
+font-size:48px!important;
+}
+.ac9e8206084cd0a170e4d6920c5a37b7a{
+font-size:19.7px;
+font-weight: bold;
+}
+*{
+font-family: 'Poppins', sans-serif;
+}
+@media only screen and (max-width:1000px){
+.img-overlay{
+min-height: 160px!important;
+}
+.c67b89b796b781f270b901f735f8e91fc{
+padding-bottom: 0px!important;
+}
+}
+@media only screen and (max-width: 1000px) {
+.y4d91e6a238eba427fff07b76b55f4b73{
+font-size: 19.9px!important;
+}
+.display-2{
+font-size: 18.1px!important;
+}
+.b2a91a5cc60a839b15c9d58941724c46b{
+font-size: 11.7px!important;
+}
+.eb183a9c89edceefa133b1c8a7fc4ec73{  
+font-size: 14.4px!important;
+}.x81d0651f92a14ea821688ea748c7082c .row:nth-child(2) {
+flex-direction: column-reverse;
+}}
+@media (min-width: 1250px){
+.container {
+max-width: 1248.2px !important;
+}
+footer .container  {
+max-width: 1199.9px !important;
+}
+}
+@media (min-width: 1330px)
+{
+.container {
+max-width: 1329.8px !important;
+}
+}
+@media (min-width: 1430px)
+{
+.container {
+max-width: 1429.7px !important;
+}
+}
+</style>
+
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "LocalBusiness", 
+"logo": "img/logo.jpg",
+"image": "img/logo.jpg",
+"url": "",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","significantLink": "https://shadowrocketvpn.com/",
+"relatedLink": "https://shadowrocketvpn.com/","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"sameAs": ["https://shadowrocketvpn.com/"],"url": "troubleshooting-common-issues.html","additionalType": "https://shadowrocketvpn.com/","name": "","identifier": "https://shadowrocketvpn.com/","description": "",
+"disambiguatingDescription": ""},
+"accessibilitySummary": ""},
+"mainEntityOfPage": "h","keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"educationalUse": [""],
+"text": [""],
+"workExample": {
+"about": {"sameAs": ["https://shadowrocketvpn.com/"],"url": "troubleshooting-common-issues.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "troubleshooting-common-issues.html"}
+},
+"hasPart":[
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"description":"In this section we will answer the most common questions to Troubleshooting common issues",
+"alternativeHeadline": "The most frequently asked questions about Troubleshooting common issues",
+"url": "troubleshooting-common-issues.html",
+"mainEntity": [{
+"@type": "Question","name": "What should I do if Shadowrocket VPN keeps disconnecting randomly?**",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Confirm that you have a stable internet connection without interruptions. Disable battery-saving modes or any other apps that might interfere with network connections. If the problem persists, reinstalling the app or updating it to the latest version may help resolve the issue."
+}
+}]
+}]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "Troubleshooting common issues",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3","ratingCount": "65",
+"reviewCount": "462"
+}
+}
+</script></head>
+<body>
+
+<nav class="navbar-expand-lg navbar">
+<a class="navbar-brand" href="index.html"  >
+
+<img alt="" src="img/logo.jpg"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon fa fa-bars"></span>
+</button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="align-items-center ml-auto navbar-nav">
+<li class="nav-item" ><a class="t24b9114f59d40cf1a1023e387f6b7da1 nav-link" href="news.html" rel="nofollow">News</a></li>
+<li class=" nav-item dropdown"><a class="nav-link t24b9114f59d40cf1a1023e387f6b7da1 dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Features of Shadowrocket VPN**</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="index.html"  >**Features of Shadowrocket VPN**</a>
+<a class="dropdown-item" href="encryption-protocols.html"  >Encryption protocols</a>
+<a class="dropdown-item" href="server-locations.html"  >Server locations</a>
+<a class="dropdown-item" href="speed-and-performance.html"  >Speed and performance</a>
+<a class="dropdown-item" href="user-interface-design.html"  >User interface design</a>
+<a class="dropdown-item" href="compatibility-with-devices.html"  >Compatibility with devices</a>
+<li class=" nav-item dropdown"><a class="nav-link dropdown-toggle t24b9114f59d40cf1a1023e387f6b7da1" href="**installation-and-setup**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Installation and Setup**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**installation-and-setup**.html"  >**Installation and Setup**</a>
+<a class="dropdown-item" href="stepbystep-installation-guide.html"  >Stepbystep installation guide</a>
+<a class="dropdown-item" href="system-requirements.html"  >System requirements</a>
+<a class="dropdown-item" href="configuration-settings.html"  >Configuration settings</a>
+<a class="dropdown-item" href="troubleshooting-common-issues.html"  >Troubleshooting common issues</a>
+<a class="dropdown-item" href="account-creation-process.html"  >Account creation process</a>
+<li class="dropdown nav-item "><a class="t24b9114f59d40cf1a1023e387f6b7da1 nav-link dropdown-toggle" href="**security-and-privacy**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Security and Privacy**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**security-and-privacy**.html"  >**Security and Privacy**</a>
+<a class="dropdown-item" href="data-encryption-standards.html"  >Data encryption standards</a>
+<a class="dropdown-item" href="nologs-policy-details.html"  >Nologs policy details</a>
+<a class="dropdown-item" href="dns-leak-protection.html"  >DNS leak protection</a>
+<a class="dropdown-item" href="kill-switch-functionality.html"  >Kill switch functionality</a>
+<a class="dropdown-item" href="impact-on-privacy-laws.html"  >Impact on privacy laws</a>
+<li class=" nav-item dropdown"><a class="dropdown-toggle t24b9114f59d40cf1a1023e387f6b7da1 nav-link" href="**comparison-with-other-vpns**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Comparison with Other VPNs**</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**comparison-with-other-vpns**.html"  >**Comparison with Other VPNs**</a>
+<a class="dropdown-item" href="performance-comparison.html"  >Performance comparison</a>
+<a class="dropdown-item" href="pricing-analysis.html"  >Pricing analysis</a>
+<a class="dropdown-item" href="feature-differences.html"  >Feature differences</a>
+<a class="dropdown-item" href="user-reviews.html"  >User reviews</a>
+<a class="dropdown-item" href="market-positioning.html"  >Market positioning</a>
+<li class="dropdown nav-item "><a class="t24b9114f59d40cf1a1023e387f6b7da1 dropdown-toggle nav-link" href="**user-experience-and-reviews**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**User Experience and Reviews**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**user-experience-and-reviews**.html"  >**User Experience and Reviews**</a>
+<a class="dropdown-item" href="customer-satisfaction-ratings.html"  >Customer satisfaction ratings</a>
+<a class="dropdown-item" href="common-user-feedback.html"  >Common user feedback</a>
+<a class="dropdown-item" href="usability-for-different-needs-eg-streaming-gaming.html"  >Usability for different needs eg streaming gaming</a>
+<a class="dropdown-item" href="update-frequency-and-support-response-time.html"  >Update frequency and support response time</a>
+<a class="dropdown-item" href="pros-and-cons-summary.html"  >Pros and cons summary</a>
+<li class="nav-item">
+<a class="t24b9114f59d40cf1a1023e387f6b7da1 nav-link" href="about-us.html" rel="nofollow" >About Us</a></li>
+</ul>
+</div>
+</nav>
+<div class="c67b89b796b781f270b901f735f8e91fc img-overlay container-fluid">
+<img  src="img/troubleshooting-comm.jpg" width="100%" class="x3dee71ee76cc5304d10d46103387b9bc" alt="Troubleshooting common issues" title="Troubleshooting common issues "></div>
+<div class="x81d0651f92a14ea821688ea748c7082c pb-5 align-items-center container-fluid px-0 d-flex"><div class="container">
+<div class="row justify-content-center">
+<div class="pt-1   col-lg-12" id="">
+<h1 class="y4d91e6a238eba427fff07b76b55f4b73 font-weight-bold text-white">Troubleshooting common issues</h1>
+</div><div class="col-lg-12 text-white ">
+<div class="eb183a9c89edceefa133b1c8a7fc4ec73 t6f45559cc56a040b58a7f1dd238312ff x0ab9669ec65e9faeba5bec9a205e4512 "><p>Troubleshooting Common Issues: A Journey Through Problem-Solving</p><br /> <p>In the tapestry of our daily lives, both personal and professional, we often encounter obstacles that impede progress and challenge our patience. These obstacles, or "common issues," can range from a malfunctioning device to a miscommunication at work. Troubleshooting these problems effectively is an invaluable skill, one that can save time, reduce stress, and improve overall efficiency. Like any skill, it requires a combination of knowledge, strategy, and a calm demeanor.</p><br /> <p>When faced with an issue, the first step in troubleshooting is identifying the problem. This might seem straightforward, but it often involves peeling back layers of symptoms to uncover the root cause. For instance, if your computer won't turn on, you don't immediately assume it's irreparable; instead you check if it's plugged in or if there's an issue with the power source. Asking the right questions-What changed recently? Has this happened before? Are there any error messages?-can narrow down potential causes quickly.</p><br /> <p>Once you've identified the problem, gathering relevant information becomes crucial. This step involves research and consultation with available resources like user manuals or online forums. In today's digital age, countless communities are dedicated to sharing solutions for common issues. Whether it's a subreddit for DIY enthusiasts or a tech forum for software developers, someone somewhere has likely encountered-and solved-a similar problem.</p><br /> <p>Armed with this information, developing a plan of action is next. Here's where critical thinking comes into play. You need to evaluate multiple solutions based on their feasibility and potential impact. For some issues, like rebooting a frozen computer or resetting a router, standard procedures are well-documented and easy to follow. For more complex problems-say diagnosing why your car won't start-you might have to consult several sources and possibly even call in expert help.</p><br /> <p>Effective troubleshooting also requires patience and persistence. Not every solution works on the first attempt; sometimes you need to try different approaches before finding one that resolves the issue completely. During this trial-and-error phase, meticulous documentation can be immensely helpful. Keeping track of what you've tried not only prevents redundant attempts but also creates a valuable record that can assist others facing similar challenges in the future.</p><br /> <p>Communication is another cornerstone of successful troubleshooting-especially when dealing with issues in collaborative environments like workplaces or team projects. Clear communication ensures everyone understands the problem's scope and contributes effectively to its resolution. If technical jargon becomes unavoidable (as it often does), taking the time to explain terms ensures everyone stays on the same page.</p><br /> <p>Moreover, emotional intelligence plays its part too: staying calm under pressure can make all the difference between solving an issue efficiently and spiraling into frustration-induced mistakes. Taking breaks when needed helps maintain focus and reduces stress levels-both essential for effective problem-solving.</p><br /> <p>Finally yet importantly comes reflection after resolving an issue: understanding what went wrong initially so preventive measures can be put into place moving forward; learning from mistakes made during troubleshooting process itself which enhances future efficiency; sharing insights gained thus contributing back valuable knowledge into community resources used earlier for assistance purposes etc., creating virtuous cycle whereby collective experiences continually enhance overall competence across broader spectrum over time itself thereby fostering culture wherein proactive approach towards tackling problems becomes second nature rather than reactive measure taken reluctantly out necessity alone!</p><br /> <p>In conclusion then ultimately boils down honing ability troubleshoot through combination keen observation skills coupled analytical mindset supplemented by wealth readily accessible resources augmented further personal perseverance tempered judiciously empathetic communication alongside reflective learning thereby transforming mundane act fixing something minor yet annoying potentially enlightening journey towards mastering art effective problem-solving beyond immediate context extending wider realms life itself!</p><p><a class="ccecbbd254cd6a3f11da6362c040b2232 t79dcdba14893a4aa197854698d8e8f11" href="https://shadowrocketvpn.com/">Troubleshooting common issues</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="a8a935484800c15804da0144c8c3a2e79 py-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-6">
+<div class="zdeeba9cb721dd9bdfc7db7833f9fb370 text-center pb-3">
+<h3>Frequently Asked Questions</h3>
+<hr>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="accordion v94535d72f62f31dc30ac06bb07d325e0" id="faqAccordion"><div class="card" >
+<div class="card-header" id="heading0">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"> What should I do if Shadowrocket VPN keeps disconnecting randomly?**<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse0" aria-labelledby="heading0" data-parent="#faqAccordion">
+<div class="card-body">Confirm that you have a stable internet connection without interruptions. Disable battery-saving modes or any other apps that might interfere with network connections. If the problem persists, reinstalling the app or updating it to the latest version may help resolve the issue.</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="align-center row justify-content-center"> 
+<div class="col-md-3">
+<ul>
+<li><a class="t24b9114f59d40cf1a1023e387f6b7da1" href="sitemap.html" rel="nofollow">Sitemap</a></li>
+<li><a class="t24b9114f59d40cf1a1023e387f6b7da1" href="privacy-policy.html" rel="nofollow">Privacy Policy</a></li>
+<li><a class="t24b9114f59d40cf1a1023e387f6b7da1" href="about-us.html" rel="nofollow">About Us</a></li>
+</ul></div></div></div>
+<hr>
+</div>
+</footer><script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</body>
+</html>
