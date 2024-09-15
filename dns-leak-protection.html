@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>DNS leak protection</title>
+<meta name="dc.title" content="DNS leak protection">
+<meta name="description" content="<p>&quot;Ensure privacy with Shadowrocket VPN's DNS leak protection, safeguarding your data by preventing accidental exposure of DNS queries.&quot;</p>">
+<meta name="keywords" content="DNS leak protection">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="dns-leak-protection.html">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="img/logo.jpg" alt="DNS leak protection" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+.f5ee7ad224c7437521da7cd075a11d96f .card1 *{
+color:#000000;
+}
+.y384712971add841d839c095a9069ccfb .card .card-header h6{
+cursor: pointer;
+padding: 1.75rem 2rem;
+color: black;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-ms-grid-row-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+}
+.y384712971add841d839c095a9069ccfb .card:last-child{
+margin-bottom: 0;
+}
+footer{
+padding-top:60px;
+padding-bottom:59.9px;
+}
+*{
+font-family: 'Poppins', sans-serif;
+}
+.d13f3b31b685c107ef8bb0c415fff42ce *{
+color:white!important;
+}
+.e8aa9de0e6ed1718de91c383722fda5b4{
+font-size:19.6px;
+padding:10.5px;
+color: black;
+}
+.wab812d98eb7e750a1655011f564c90ba{
+font-size: 13.8px;
+}
+.navbar a{
+font-size: 17.8px;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card4{
+background:#ffffff!important;
+}
+.div1 h2{
+font-size:48px!important;
+}
+.c1951d11e6707e735b2680d13401ab801{
+text-decoration: underline!important;color:#ff626b!important
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card-title{
+text-align: left;
+color: #ffb3b7;
+}
+.btn-md{
+padding:15.1px 30.4px;
+border-radius: 0;
+}
+.card2 a{
+color:#ff6b74!important;
+}
+.fa-star,.fa-star-half-alt{
+font-size: 14.8px;
+}
+.wbac867b8ab7aa4cea39bec05ff6e7f93{
+width: 100%;
+max-height: 719.6px;
+object-fit: cover;
+object-position: center;
+display: block;
+max-height: 100%;
+max-width: 100%;
+margin: auto;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+}
+.card1 a{
+color:#ff6069!important;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card1{
+background:#ffffff!important ;
+}
+.y384712971add841d839c095a9069ccfb .card .card-header h6 span{
+font-size: 1.5rem;
+}
+.nav-link{
+color: #030303 !important;
+}
+.align-self-stretch{
+ms-flex-item-align: stretch!important;
+align-self: stretch!important;
+}
+.z9588f9529125fdb59d2a5c78150d8481 *{
+color: #ffffff;
+}
+.navbar-toggler span{
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid lightgrey;
+border-radius: 3px;
+}
+.e8aa9de0e6ed1718de91c383722fda5b4 i{
+border-radius: 50%;
+width: 10mm;
+text-align: center;
+line-height: 37px;
+height: 10mm;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card3{
+background:#ffffff!important;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card3 *{
+color:#000000;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card{
+background-color: transparent;
+border: none;
+}
+.c095f136e8df466e11c665e03851df553{
+list-style: none;
+font-size:19px!important;
+}
+.card3 a{
+color:#ff727b!important;
+}
+.y5a99602f5541b4aa90d89b2d8cc915d3{
+background: #ffffff;
+}
+.bg-brown{
+background: #f4f2ee;
+}
+.display-2{
+font-size: 44.7px;
+}
+.y384712971add841d839c095a9069ccfb .card .card-header h6.collapsed span{
+-webkit-transform: rotate(-180deg);
+transform: rotate(-180deg);
+}
+.z9588f9529125fdb59d2a5c78150d8481{
+background: #070707;
+}
+.y384712971add841d839c095a9069ccfb .card .card-body p:last-child{
+margin-bottom: 0;
+}
+.dropdown-menu{
+max-width:800.3px;
+overflow-x: auto;
+}
+.y384712971add841d839c095a9069ccfb .card .card-body{
+padding: 1.75rem 2rem;
+}
+.f5ee7ad224c7437521da7cd075a11d96f p ,.f5ee7ad224c7437521da7cd075a11d96f label{
+font-size:18px!important;
+}
+footer a{
+color:  #898989!important;
+text-decoration: underline!important;
+}
+footer ul{
+padding-left: 0px!important;
+list-style: none;
+}
+.f5ee7ad224c7437521da7cd075a11d96f h4{
+font-size:20px!important;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card2{
+background:#ffffff!important;
+}
+.f5ee7ad224c7437521da7cd075a11d96f{
+padding-top:89.9px;
+padding-bottom:89.9px;
+background-color:#ffffff;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card4 *{
+color:#000000;
+}
+.yf50a6d04a877b40b1b795262c61f0acb{
+font-size:20.1px;
+font-weight: bold;
+}
+.nav-item{
+margin-top: 9.5px;
+margin-bottom: 9.6px;
+padding-left: 7px;
+padding-right: 6.9px;
+}
+li a{
+color: #ff616a;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card .card-img span{
+font-size: 59.9px;
+background: linear-gradient(45deg, #ffa5a9,#b39dff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.b4401cbe312a8978dae350568b0f2425b{
+font-size: 29.5px!important;
+}
+.x71e4b5dd266d5de45b45bc7cfa1f621d{
+position: relative;
+z-index: 1;
+background: #070707;
+}
+.x335032a3688501287d386e38e0f55446{
+color: white;
+font-size: 19.6px;
+margin-bottom: 21.2px;
+}
+a{
+text-decoration: none!important;
+}
+.y384712971add841d839c095a9069ccfb .card .card-header{
+background-color: #ffffff;
+padding: 0;
+border-bottom-color: #ffffff;
+}
+.x8acdcc4772c87b424ef51ed5c1df25ba{
+height: 100%;
+object-fit: none;
+}
+iframe{
+border: none!important;
+}
+.w4905172a7d4ed43a0d939d9f8c661a53{
+font-size:19px!important;
+}
+.ud84f91f79f9f9eb45eee8a41460c0be7{
+color: white;
+}
+.x8251786ddd34fcfdff201f1e9d022c48{
+color: #ffffff;
+}
+.e8aa9de0e6ed1718de91c383722fda5b4 i:hover{
+background: black;
+color:#ffd6da;
+border-radius: 50%;
+width:10mm;
+text-align:center;
+height:10mm;
+}
+.img-overlay{
+position: relative;
+min-height: 599.8px;
+}
+.w6c15ced2a2ad095e7531b1e81557b088,p{
+font-size:17.9px;
+}
+.x9e7a12bef026a681ef023becb86b005d{
+max-height: 300px;
+overflow-y:auto; 
+}
+.y384712971add841d839c095a9069ccfb .card{
+position: relative;
+z-index: 1;
+margin-bottom: 1.5rem;
+}
+.underline .line{
+width: 5rem;
+height: 3px;
+background: linear-gradient(90deg, #b7a1ff,#ff5861);
+display: inline-block;
+}
+.a5543db4c63ad9b6429e71b12e51ee608{
+font-size:48px!important;
+}
+.z72dd9495051432c00aa4fe64df64b9e7:hover{
+background-size: 100% 100%!important;
+color:#fecbcf!important;
+background:#ffffff!important;
+background-repeat: no-repeat!important;
+background-position: 0 90%!important; 
+transition: background-size 0.2s ease-in!important;
+}
+ul{
+list-style: circle;
+}
+.d13f3b31b685c107ef8bb0c415fff42ce{
+background: rgba(0,0,0,0.6);
+text-align: center;
+}
+.y384712971add841d839c095a9069ccfb .card .card-header.collapsed{
+color: #090c59;
+}
+.v4a0bb376df7b1ddc91e659f28a29cd8f{
+background-color:#fe5270!important;
+border-color:#fe5270!important;
+color:#ffffff!important;
+}
+footer *{
+font-size:19px!important;
+color:#898989!important;
+line-height: 1.5;
+}
+.y5a99602f5541b4aa90d89b2d8cc915d3 *{
+color: #050505!important;
+}
+.y384712971add841d839c095a9069ccfb{
+position: relative;
+z-index: 1;
+}
+.becd196759b502d9f99a3c4676f7a6e12 *{
+font-size:19px!important;
+color: #848484;
+}
+.f5ee7ad224c7437521da7cd075a11d96f .card2 *{
+color:#000000;
+}
+@media only screen and (max-width:1000px){
+.img-overlay{
+min-height: 160.3px!important;
+}
+.x7a88acd5c36864c7df2d9cf0387882d4{
+padding-bottom: 0px!important;
+}
+}
+@media only screen and (max-width: 1000px) {
+.a5543db4c63ad9b6429e71b12e51ee608{
+font-size: 20.1px!important;
+}
+.display-2{
+font-size: 18px!important;
+}
+.becd196759b502d9f99a3c4676f7a6e12{
+font-size: 11.5px!important;
+}
+.w6c15ced2a2ad095e7531b1e81557b088{  
+font-size: 14.1px!important;
+}.y5a99602f5541b4aa90d89b2d8cc915d3 .row:nth-child(2) {
+flex-direction: column-reverse;
+}}
+@media (min-width: 1250px){
+.container {
+max-width: 1248.4px !important;
+}
+footer .container  {
+max-width: 1200.4px !important;
+}
+}
+@media (min-width: 1330px)
+{
+.container {
+max-width: 1330px !important;
+}
+}
+@media (min-width: 1430px)
+{
+.container {
+max-width: 1429.8px !important;
+}
+}
+</style>
+
+<script type='application/ld+json'> 
+{
+"@context": "http://www.schema.org",
+"@type": "LocalBusiness", 
+"logo": "img/logo.jpg",
+"image": "img/logo.jpg",
+"url": "",
+"address": {
+"@type": "PostalAddress"} }
+</script>
+<script type="application/ld+json">
+{
+"@type": "WebPage",
+"@context": "http://www.schema.org","significantLink": "https://shadowrocketvpn.com/",
+"relatedLink": "https://shadowrocketvpn.com/","lastReviewed": "2021-12-01",
+"mainContentOfPage": {
+"about": {"sameAs": ["https://shadowrocketvpn.com/"],"url": "dns-leak-protection.html","additionalType": "https://shadowrocketvpn.com/","name": "","identifier": "https://shadowrocketvpn.com/","description": "",
+"disambiguatingDescription": ""},
+"accessibilitySummary": ""},
+"mainEntityOfPage": "h","keywords": [""],
+"award": ["Best "],
+"teaches": [""],
+"educationalUse": [""],
+"text": [""],
+"workExample": {
+"about": {"sameAs": ["https://shadowrocketvpn.com/"],"url": "dns-leak-protection.html"
+}
+},
+"citation": {
+"@type": "CreativeWork",
+"about": {
+"url": "dns-leak-protection.html"}
+},
+"hasPart":[
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"description":"In this section we will answer the most common questions to DNS leak protection",
+"alternativeHeadline": "The most frequently asked questions about DNS leak protection",
+"url": "dns-leak-protection.html",
+"mainEntity": [{
+"@type": "Question","name": "How does Shadowrocket VPN ensure DNS leak protection for users?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Shadowrocket VPN ensures DNS leak protection by routing all DNS requests through its encrypted VPN tunnel, preventing them from being exposed to your ISP or other third parties."
+}
+},{
+"@type": "Question","name": "What steps can I take within the Shadowrocket app to enable or verify DNS leak protection?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "Within the Shadowrocket app, you can enable DNS leak protection by going to Settings > Advanced Settings and ensuring that the option for Prevent DNS Leak is activated. You can verify it by using online tools like DNSLeakTest.com while connected to the VPN."
+}
+},{
+"@type": "Question","name": "Why is DNS leak protection important when using a VPN like Shadowrocket?",
+"acceptedAnswer": {
+"@type": "Answer",
+"text": "DNS leak protection is crucial because it prevents your real browsing activity from being exposed via unencrypted DNS queries. This helps maintain your privacy and security, ensuring that all aspects of your internet traffic are routed through the secure VPN tunnel provided by Shadowrocket."
+}
+}]
+}]
+}
+</script><script type="application/ld+json">
+{
+"@context": "http://schema.org/",
+"@type": "Product",
+"name": "DNS leak protection",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "3","ratingCount": "135",
+"reviewCount": "183"
+}
+}
+</script></head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="index.html"  >
+
+<img alt="" src="img/logo.jpg"  ></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon fa fa-bars"></span>
+</button><div class="navbar-collapse collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto align-items-center">
+<li class="nav-item" ><a class="nav-link z72dd9495051432c00aa4fe64df64b9e7" href="news.html" rel="nofollow">News</a></li>
+<li class="nav-item  dropdown"><a class="z72dd9495051432c00aa4fe64df64b9e7 dropdown-toggle nav-link" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Features of Shadowrocket VPN**</a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="index.html"  >**Features of Shadowrocket VPN**</a>
+<a class="dropdown-item" href="encryption-protocols.html"  >Encryption protocols</a>
+<a class="dropdown-item" href="server-locations.html"  >Server locations</a>
+<a class="dropdown-item" href="speed-and-performance.html"  >Speed and performance</a>
+<a class="dropdown-item" href="user-interface-design.html"  >User interface design</a>
+<a class="dropdown-item" href="compatibility-with-devices.html"  >Compatibility with devices</a>
+<li class="dropdown  nav-item"><a class="z72dd9495051432c00aa4fe64df64b9e7 dropdown-toggle nav-link" href="**installation-and-setup**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Installation and Setup**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**installation-and-setup**.html"  >**Installation and Setup**</a>
+<a class="dropdown-item" href="stepbystep-installation-guide.html"  >Stepbystep installation guide</a>
+<a class="dropdown-item" href="system-requirements.html"  >System requirements</a>
+<a class="dropdown-item" href="configuration-settings.html"  >Configuration settings</a>
+<a class="dropdown-item" href="troubleshooting-common-issues.html"  >Troubleshooting common issues</a>
+<a class="dropdown-item" href="account-creation-process.html"  >Account creation process</a>
+<li class="dropdown  nav-item"><a class="nav-link dropdown-toggle z72dd9495051432c00aa4fe64df64b9e7" href="**security-and-privacy**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Security and Privacy**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**security-and-privacy**.html"  >**Security and Privacy**</a>
+<a class="dropdown-item" href="data-encryption-standards.html"  >Data encryption standards</a>
+<a class="dropdown-item" href="nologs-policy-details.html"  >Nologs policy details</a>
+<a class="dropdown-item" href="dns-leak-protection.html"  >DNS leak protection</a>
+<a class="dropdown-item" href="kill-switch-functionality.html"  >Kill switch functionality</a>
+<a class="dropdown-item" href="impact-on-privacy-laws.html"  >Impact on privacy laws</a>
+<li class=" dropdown nav-item"><a class="nav-link z72dd9495051432c00aa4fe64df64b9e7 dropdown-toggle" href="**comparison-with-other-vpns**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**Comparison with Other VPNs**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**comparison-with-other-vpns**.html"  >**Comparison with Other VPNs**</a>
+<a class="dropdown-item" href="performance-comparison.html"  >Performance comparison</a>
+<a class="dropdown-item" href="pricing-analysis.html"  >Pricing analysis</a>
+<a class="dropdown-item" href="feature-differences.html"  >Feature differences</a>
+<a class="dropdown-item" href="user-reviews.html"  >User reviews</a>
+<a class="dropdown-item" href="market-positioning.html"  >Market positioning</a>
+<li class="dropdown  nav-item"><a class="nav-link dropdown-toggle z72dd9495051432c00aa4fe64df64b9e7" href="**user-experience-and-reviews**.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">**User Experience and Reviews**</a>
+<div class="dropdown-menu-right dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="**user-experience-and-reviews**.html"  >**User Experience and Reviews**</a>
+<a class="dropdown-item" href="customer-satisfaction-ratings.html"  >Customer satisfaction ratings</a>
+<a class="dropdown-item" href="common-user-feedback.html"  >Common user feedback</a>
+<a class="dropdown-item" href="usability-for-different-needs-eg-streaming-gaming.html"  >Usability for different needs eg streaming gaming</a>
+<a class="dropdown-item" href="update-frequency-and-support-response-time.html"  >Update frequency and support response time</a>
+<a class="dropdown-item" href="pros-and-cons-summary.html"  >Pros and cons summary</a>
+<li class="nav-item">
+<a class="z72dd9495051432c00aa4fe64df64b9e7 nav-link" href="about-us.html" rel="nofollow" >About Us</a></li>
+</ul>
+</div>
+</nav>
+<div class="x7a88acd5c36864c7df2d9cf0387882d4 img-overlay container-fluid">
+<img  src="img/dns-leak-protection.jpg" width="100%" class="wbac867b8ab7aa4cea39bec05ff6e7f93" alt="DNS leak protection" title="DNS leak protection "></div>
+<div class="container-fluid d-flex y5a99602f5541b4aa90d89b2d8cc915d3 align-items-center px-0 pb-5"><div class="container">
+<div class="justify-content-center row">
+<div class="col-lg-12 pt-1  " id="">
+<h1 class="a5543db4c63ad9b6429e71b12e51ee608 text-white font-weight-bold">DNS leak protection</h1>
+</div><div class=" col-lg-12 text-white">
+<div class="ud84f91f79f9f9eb45eee8a41460c0be7  w4905172a7d4ed43a0d939d9f8c661a53 w6c15ced2a2ad095e7531b1e81557b088"><p>In our interconnected digital age, privacy and security have become paramount concerns for internet users worldwide. Every click, every search, and every online interaction leaves a trail that can be traced back to us. One of the critical aspects of maintaining online privacy is ensuring that our Domain Name System (DNS) queries remain private. This is where DNS leak protection comes into play-a crucial feature for anyone serious about safeguarding their online anonymity.</p><br /> <p>To understand DNS leak protection, it's essential first to grasp the concept of the DNS itself. The Domain Name System functions as the internet's phonebook, translating human-friendly domain names like www.example.com into IP addresses that computers use to identify each other on the network. Whenever you type a URL into your browser or click on a link, your device sends a DNS query to resolve the domain name into its corresponding IP address.</p><br /> <p>Under normal circumstances, these DNS queries are sent to your Internet Service Provider (ISP), which then translates them and directs you to the desired website. However, this process exposes a significant vulnerability: without proper safeguards, these queries can be intercepted or monitored by third parties-be it ISPs themselves, malicious actors, or even government surveillance entities.</p><br /> <p>This is where Virtual Private Networks (VPNs) often come into play. A VPN encrypts your internet traffic and routes it through a secure server located elsewhere in the world before it reaches its final destination. This not only masks your IP address but also conceals your browsing activity from prying eyes. Yet, despite using a VPN, there's still a potential pitfall: DNS leaks.</p><br /> <p>A DNS leak occurs when your device bypasses the encrypted VPN tunnel and sends DNS queries directly to your ISP's servers instead of routing them through the VPN's secure tunnel. This inadvertent exposure undermines the very purpose of using a VPN-maintaining privacy and anonymity-because anyone monitoring those queries can still see what websites you're accessing.</p><br /> <p>DNS leak protection is specifically designed to prevent this from happening. It ensures that all DNS requests are routed exclusively through the VPN tunnel and handled by secure servers provided by the VPN provider instead of defaulting back to your ISP's servers. Implementing this feature involves configuring both software settings on user devices and robust protocols within VPN services themselves.</p><br /> <p>For users who prioritize their privacy-whether they're journalists operating in repressive regimes, whistleblowers communicating sensitive information, or everyday individuals concerned about data harvesting-DNS leak protection provides an added layer of security against inadvertent data exposure.</p><br /> <p>Most reputable VPN providers now offer built-in DNS leak protection as part of their service packages. These features are typically enabled by default but can also be manually adjusted within advanced settings for those who wish more control over their configuration.</p><br /> <p>Moreover, testing for potential leaks has become easier with numerous online tools available specifically designed for this purpose. By running these tests periodically-or after making changes to network configurations-users can verify whether their connection remains secure or if there might be vulnerabilities needing attention.</p><br /> <p>In conclusion, while many people may overlook something as seemingly technical as DNS during discussions about online privacy and security measures; understanding its role-and ensuring adequate protections against leaks-is vital in today's digital landscape where threats abound around every corner waiting eagerly at any opportunity presented before them ready pounce upon unsuspecting victims caught off guard unaware dangers lurking beneath surface seemingly tranquil waters internet ocean surrounding us all times no matter how far away we think ourselves safe harbored shores!</p><br /> <p>Investing time learning importance implementing effective strategies such deploying strong reliable mechanisms like dns-leak-protection goes long way ensuring peace mind knowing steps taken protect valuable personal information from falling hands those would misuse exploit own ends thereby helping maintain freedom autonomy navigate web safely securely confidence knowing precautions place keep hidden sight unwanted observers!</p><p><a class="f23cc48a8157a687092eda6d0edae9841 x3531df52678cbc1433c06b6432c1ebdb" href="https://shadowrocketvpn.com/">DNS leak protection</a></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="py-5 x71e4b5dd266d5de45b45bc7cfa1f621d">
+<div class="container">
+<div class="justify-content-center row">
+<div class="col-lg-6">
+<div class="x8251786ddd34fcfdff201f1e9d022c48 text-center pb-3">
+<h3>Frequently Asked Questions</h3>
+<hr>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-lg-8">
+<div class="accordion y384712971add841d839c095a9069ccfb" id="faqAccordion"><div class="card" >
+<div class="card-header" id="heading0">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="true" aria-controls="collapse0"> How does Shadowrocket VPN ensure DNS leak protection for users?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse0" aria-labelledby="heading0" data-parent="#faqAccordion">
+<div class="card-body">Shadowrocket VPN ensures DNS leak protection by routing all DNS requests through its encrypted VPN tunnel, preventing them from being exposed to your ISP or other third parties.</div>
+</div>
+</div><div class="card" >
+<div class="card-header" id="heading1">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1"> What steps can I take within the Shadowrocket app to enable or verify DNS leak protection?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse1" aria-labelledby="heading1" data-parent="#faqAccordion">
+<div class="card-body">Within the Shadowrocket app, you can enable DNS leak protection by going to Settings > Advanced Settings and ensuring that the option for Prevent DNS Leak is activated. You can verify it by using online tools like DNSLeakTest.com while connected to the VPN.</div>
+</div>
+</div><div class="card" >
+<div class="card-header" id="heading2">
+<h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2"> Why is DNS leak protection important when using a VPN like Shadowrocket?<span class="lni-chevron-up"></span></h6>
+</div>
+<div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#faqAccordion">
+<div class="card-body">DNS leak protection is crucial because it prevents your real browsing activity from being exposed via unencrypted DNS queries. This helps maintain your privacy and security, ensuring that all aspects of your internet traffic are routed through the secure VPN tunnel provided by Shadowrocket.</div>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="container">
+<div class="align-center justify-content-center row"> 
+<div class="col-md-3">
+<ul>
+<li><a class="z72dd9495051432c00aa4fe64df64b9e7" href="sitemap.html" rel="nofollow">Sitemap</a></li>
+<li><a class="z72dd9495051432c00aa4fe64df64b9e7" href="privacy-policy.html" rel="nofollow">Privacy Policy</a></li>
+<li><a class="z72dd9495051432c00aa4fe64df64b9e7" href="about-us.html" rel="nofollow">About Us</a></li>
+</ul></div></div></div>
+<hr>
+</div>
+</footer><script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var dropdowns = document.querySelectorAll('.dropdown-hover');
+function showDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'block';
+}
+function hideDropdown() {
+var dropdownMenu = this.querySelector('.dropdown-menu');
+dropdownMenu.style.display = 'none';
+}
+function handleClick(event) {
+var target = event.target;
+window.location.href = target.getAttribute('href');
+}
+dropdowns.forEach(function(dropdown) {
+dropdown.addEventListener('mouseenter', showDropdown);
+dropdown.addEventListener('mouseleave', hideDropdown);
+var dropdownMenu = dropdown.querySelector('.dropdown-toggle');
+dropdownMenu.addEventListener('click', handleClick);
+});
+});
+</script>
+</body>
+</html>
